@@ -81,24 +81,4 @@ function viewByDepartment() {
                 
                 userPrompts();
             });
-        } else if (data.departments === "Engineering") {
-            connection.query("SELECT * FROM employees INNER JOIN roles on employees.role_id=roles.role_id INNER JOIN departments on roles.department_id=departments.department_id WHERE departments.department_id=2", function (err, res) {
-                if (err) throw err;
-                console.table(res);
-                userPrompts();
-            });
-        } else if (data.departments === "Finance") {
-            connection.query("SELECT * FROM employees INNER JOIN roles on employees.role_id=roles.role_id INNER JOIN departments on roles.department_id=departments.department_id WHERE departments.department_id=3", function (err, res) {
-                if (err) throw err;
-                console.table(res);
-                userPrompts();
-            });
-        } else {
-            connection.query("SELECT * FROM employees INNER JOIN roles on employees.role_id=roles.role_id INNER JOIN departments on roles.department_id=departments.department_id WHERE departments.department_id=4", function (err, res) {
-                if (err) throw err;
-                console.table(res);
-                userPrompts();
-            });
-        }
-    });
-};
+            
