@@ -119,7 +119,7 @@ function addEmployee() {
             roles.push(res[i].role_id + '. ' + res[i].title)
         }
     });
-    // Add new employees 
+    // Add a new employee => ask for: first name, last name, role, manager, then update table and console.table()
     inquirer.prompt([{
         type: "input",
         name: "newEmployeeFirstName",
