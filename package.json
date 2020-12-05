@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/LaBrewT2/employee-managment-system/issues"
   },
-  "homepage": "https://github.com/LaBrewT2/employee-managment-system#readme"
+  "homepage": "https://github.com/LaBrewT2/employee-managment-system#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.3.3"
+  }
 }
