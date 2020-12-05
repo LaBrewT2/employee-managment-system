@@ -1,0 +1,23 @@
+{
+  "name": "employee-managment-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaBrewT2/employee-managment-system.git"
+  },
+  "keywords": [
+    "management"
+  ],
+  "author": "Tanasia LaBrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaBrewT2/employee-managment-system/issues"
+  },
+  "homepage": "https://github.com/LaBrewT2/employee-managment-system#readme"
+}
