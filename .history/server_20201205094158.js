@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
     // Username
     user: "root",
 
-    // Password and database
+    // Password
     password: "",
     database: "employee_tracker_db"
 });
@@ -20,7 +20,7 @@ connection.connect(function (err) {
     
     userPrompts();
 });
-//User prompt 
+
 function userPrompts() {
     inquirer.prompt([{
         type: "list",
@@ -55,7 +55,7 @@ function userPrompts() {
     });
 };
 function viewAllEmployees() {
-    // view all employees
+    // view all employees => console.table all employees
     connection.query("SELECT * FROM employees", function (err, res) {
         if (err) throw err;
         console.table(res);
