@@ -33,5 +33,6 @@ function userPrompts() {
             "Delete an employee",
             "Update employee role",
             "Update employee manager",
-            "All done!"]
+            "All done!"
+        ]
     }]).then(function (data) {
