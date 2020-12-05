@@ -35,22 +35,4 @@ function userPrompts() {
             "Update employee manager",
             "All done!"]
     }]).then(function (data) {
-        if (data.userPrompts === "View all employees") {
-            viewAllEmployees();
-        } else if (data.userPrompts === "View employees by department") {
-            viewByDepartment();
-        } else if (data.userPrompts === "View employees by manager") {
-            viewByManager();
-        } else if (data.userPrompts === "Add a new employee") {
-            addEmployee();
-        } else if (data.userPrompts === "Delete an employee") {
-            deleteEmployee();
-        } else if (data.userPrompts === "Update employee role") {
-            updateEmployeeRole();
-        } else if (data.userPrompts === "Update employee manager") {
-            updateManager();
-        } else {
-            connection.end();
-        }
-    });
-};
+        
