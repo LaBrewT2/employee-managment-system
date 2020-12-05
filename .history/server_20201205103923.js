@@ -155,7 +155,7 @@ function addEmployee() {
     })
 };
 
-//Part to return too --Add View the total utilized budget for departments
+//Part to return too --Add View the total utilized budget
 //Delete employee
 //function deleteEmployee() {
    

@@ -155,22 +155,24 @@ function addEmployee() {
     })
 };
 
-//Part to return too --Add View the total utilized budget for departments
+//Retu
 //Delete employee
-//function deleteEmployee() {
+function deleteEmployee() {
    
 
-  //  userPrompts(); };
+    userPrompts();
+};
 
-//Update Employee 
-//function updateEmployeeRole() {
+//Update Employee
+function updateEmployeeRole() {
     
 
- //   userPrompts(); };
+    userPrompts();
+};
 
 //Update Manager
-//function updateManager() {
+function updateManager() {
     
 
-  //  userPrompts();
-//};
+    userPrompts();
+};

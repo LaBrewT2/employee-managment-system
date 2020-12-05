@@ -55,7 +55,7 @@ function userPrompts() {
     });
 };
 function viewAllEmployees() {
-    // view ALL employees
+    // view all employees
     connection.query("SELECT * FROM employees", function (err, res) {
         if (err) throw err;
         console.table(res);
@@ -102,7 +102,7 @@ function viewByDepartment() {
         }
     });
 };
-//Adding Employees
+
 function addEmployee() {
     var manager =[];
     connection.query("SELECT CONCAT(firstName, ' ', lastName) as 'manager', employee_id FROM employees where employee_id in (SELECT distinct manager_id FROM employees)", function (err, res) {
@@ -119,7 +119,7 @@ function addEmployee() {
             roles.push(res[i].role_id + '. ' + res[i].title)
         }
     });
-    // Adding new employees prompt
+    // Add new employees 
     inquirer.prompt([{
         type: "input",
         name: "newEmployeeFirstName",
@@ -154,23 +154,22 @@ function addEmployee() {
             })
     })
 };
-
-//Part to return too --Add View the total utilized budget for departments
 //Delete employee
-//function deleteEmployee() {
+function deleteEmployee() {
    
 
-  //  userPrompts(); };
+    userPrompts();
+};
 
-//Update Employee 
-//function updateEmployeeRole() {
+//Update Employee
+function updateEmployeeRole() {
     
 
- //   userPrompts(); };
+    userPrompts();
+};
 
-//Update Manager
-//function updateManager() {
+function updateManager() {
     
 
-  //  userPrompts();
-//};
+    userPrompts();
+};
